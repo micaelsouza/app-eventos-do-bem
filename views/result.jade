@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  div#container
+    div.side-bar#side-bar-left
+    div#result
+      hGroup
+        h2 SUA CAUSA É: #{result.mission}
+        h2 Personalidade: #{result.personality.name}
+
+      img(src= result.personality.image).personality-image
+
+      div.description #{result.description}
+
+      div.fb-share-button Compartilhar!
+
+    div.side-bar#side-bar-right

@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  box-sizing: border-box;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+body {
+  padding: 50px;
+  font-family: 'Roboto', sans-serif;;
+  font-size: 14px;
+  background: #eee;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#top {
+  float: left;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+#top .ico {
+  float: left;
+  width: 120px;
+  height: 60px;
+  background: rgba(255, 0, 0, 0.5);
+}
+
+#top .titulo-top {
+  float: left;
+  width: 260px;
+  height: 60px;
+}
+
+#top .titulo-top h3,
+#top .titulo-top h2 {
+  margin-top: 5px;
+  width: 100%;
+  text-align: center;
+  font-weight: 100;
+}
+
+#container {
+  display: table;
+  margin: 0 auto;
+  width: 500px;
+}
+
+#progress-bar {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 15px;
+  margin-bottom: 15px;
+  background: #65B4E8;
+}
+
+#progress-bar .progress-bar-percent {
+  position: absolute;
+  height: 15px;
+  background: #2980b9;
+}
+
+#container .titulo-questao {
+  float: left;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  width: 100%;
+  text-align: center;
+  font-weight: 100;
+}
+
+#container .btns {
+  padding: 5px;
+  width: 100%;
+}
+
+#container .btns .btn {
+  display: table;
+  margin-bottom: 3px;
+  padding: 5px;
+  width: 100%;
+  min-height: 65px;
+  text-align: center;
+  background: #fff;
+  text-decoration: none;
+  color: #666;
+}
+
+#container .btns .btn:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+#container .btns .btn > div {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+}
+
+#result {
+  width: 300px;
+  margin: 0 auto;
+  background: rgba(255, 0, 0, 0.5);
+}
+
+#result hgroup {
+  width: 100%;
+  float: left;
+  margin-bottom: 15px;
+}
+
+#result hgroup * {
+  width: 100%;
+  float: left;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: 100;
+}
+
+#result > img {
+  width: 100%;
+  float: left;
+}
+
+#result .description {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  float: left;
+}
+
+#result .fb-share-button {
+  float: left;
+  width: 100%;
+  padding: 15px 0;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  color: #fff;
+  background: #223770;
+}
+
+#result .fb-share-button:hover {
+  background: #4E69A2;
+  cursor: pointer;
+}

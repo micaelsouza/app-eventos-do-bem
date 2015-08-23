@@ -1,0 +1,19 @@
+extends layout
+
+block content
+  div#container
+    div#top
+      div.eventos-do-bem.ico.ico-left
+        img(src='images/eventos-do-bem-ico-top.png')
+      div.titulo-top
+        h3 Qual é a sua missão?
+        h2 Questão #{progressBar} de 4
+      div.atados.ico.ico-right
+        img(src='images/atados-ico-top.png')
+    div#progress-bar
+      div.progress-bar-percent(style='width:' + progressBar * 125 + 'px')
+    h2.titulo-questao #{question.question}
+    div.btns
+      each alternative, index in question.alternatives
+        a(href=nextLevel+'?answer='+index class='btn')
+          div= alternative
