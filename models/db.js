@@ -13,9 +13,9 @@ var resultSchema = new mongoose.Schema({
   mission: String,
   personality: {
     name: String,
-    image: String
-  },
-  description: String
+    image: String,
+    bio: String
+  }
 });
 
 module.exports = {

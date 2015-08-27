@@ -28,14 +28,13 @@ a {
 #top .ico {
   float: left;
   width: 120px;
-  height: 60px;
-  background: rgba(255, 0, 0, 0.5);
+  height: 120px;
 }
 
 #top .titulo-top {
   float: left;
   width: 260px;
-  height: 60px;
+  height: 120px;
 }
 
 #top .titulo-top h3,
@@ -45,6 +44,11 @@ a {
   text-align: center;
   font-weight: 100;
 }
+
+#top .titulo-top h3 {
+  margin-top: 37px;
+}
+
 
 #container {
   display: table;
@@ -135,7 +139,7 @@ a {
   float: left;
 }
 
-#result .fb-share-button {
+#result button.share {
   float: left;
   width: 100%;
   padding: 15px 0;
@@ -146,7 +150,7 @@ a {
   background: #223770;
 }
 
-#result .fb-share-button:hover {
+#result button.share:hover {
   background: #4E69A2;
   cursor: pointer;
 }

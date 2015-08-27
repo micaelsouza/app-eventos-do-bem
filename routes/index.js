@@ -18,7 +18,12 @@ router.get('/1', function(req, res, next) {
     res.render('index', {
       question: question,
       nextLevel: '/2',
-      progressBar: 1
+      progressBar: 1,
+      site: {
+        title: 'Qual é a sua missão?',
+        description: 'Descubra qual a sua missão e veja com qual celebridade você mais se parece.',
+        image: null
+      }
     });
   });
 });
@@ -36,7 +41,12 @@ router.get('/2', function(req, res, next) {
     res.render('index', {
       question: question,
       nextLevel: '/3',
-      progressBar: 2
+      progressBar: 2,
+      site: {
+        title: 'Qual é a sua missão?',
+        description: 'Descubra qual a sua missão e veja com qual celebridade você mais se parece.',
+        image: null
+      }
     });
   });
 });
@@ -53,7 +63,12 @@ router.get('/3', function(req, res, next) {
     res.render('index', {
       question: question,
       nextLevel: '/4',
-      progressBar: 3
+      progressBar: 3,
+      site: {
+        title: 'Qual é a sua missão?',
+        description: 'Descubra qual a sua missão e veja com qual celebridade você mais se parece.',
+        image: null
+      }
     });
   });
 });
@@ -70,7 +85,12 @@ router.get('/4', function(req, res, next) {
     res.render('index', {
       question: question,
       nextLevel: '/result',
-      progressBar: 4
+      progressBar: 4,
+      site: {
+        title: 'Qual é a sua missão?',
+        description: 'Descubra qual a sua missão e veja com qual celebridade você mais se parece.',
+        image: null
+      }
     });
   });
 });
@@ -83,7 +103,14 @@ router.get('/result', function(req, res, next) {
     if (result == null) return res.json({
       result: result
     });
-    res.render('result', {result: result});
+    res.render('result', {
+      result: result,
+      site: {
+        title: 'Minha missão é: ' + result.mission + '.',
+        description: 'Eu tirei ' + result.personality.name + '.',
+        image: result.personality.image
+      }
+    });
   });
 });
 
