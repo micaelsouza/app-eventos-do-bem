@@ -42,6 +42,8 @@ router.get('/2', function(req, res, next) {
       question: question,
       nextLevel: '/3',
       progressBar: 2,
+      isImage: true,
+      p: req.query.answer,
       site: {
         title: 'Qual é a sua missão?',
         description: 'Descubra qual a sua missão e veja com qual celebridade você mais se parece.',
@@ -54,7 +56,7 @@ router.get('/2', function(req, res, next) {
 router.get('/3', function(req, res, next) {
   db.Questions.findOne({
     level: '3',
-    ref: req.query.answer
+    ref: '0'
   }, function(err, question) {
     if (err) return console.log(err);
     if (question == null) return res.json({
@@ -64,6 +66,7 @@ router.get('/3', function(req, res, next) {
       question: question,
       nextLevel: '/4',
       progressBar: 3,
+      p: req.query.p,
       site: {
         title: 'Qual é a sua missão?',
         description: 'Descubra qual a sua missão e veja com qual celebridade você mais se parece.',
@@ -76,7 +79,7 @@ router.get('/3', function(req, res, next) {
 router.get('/4', function(req, res, next) {
   db.Questions.findOne({
     level: '4',
-    ref: req.query.answer
+    ref: '0'
   }, function(err, question) {
     if (err) return console.log(err);
     if (question == null) return res.json({
@@ -86,6 +89,7 @@ router.get('/4', function(req, res, next) {
       question: question,
       nextLevel: '/result',
       progressBar: 4,
+      p: req.query.p,
       site: {
         title: 'Qual é a sua missão?',
         description: 'Descubra qual a sua missão e veja com qual celebridade você mais se parece.',
@@ -97,7 +101,7 @@ router.get('/4', function(req, res, next) {
 
 router.get('/result', function(req, res, next) {
   db.Results.findOne({
-    result: req.query.answer
+    result: req.query.p,
   }, function(err, result) {
     if (err) return console.log(err);
     if (result == null) return res.json({

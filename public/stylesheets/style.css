@@ -63,6 +63,8 @@ a {
   height: 15px;
   margin-bottom: 15px;
   background: #65B4E8;
+  border-radius: 15px;
+  overflow: hidden;
 }
 
 #progress-bar .progress-bar-percent {
@@ -103,7 +105,8 @@ a {
   color: #fff;
 }
 
-#container .btns .btn > div {
+#container .btns .btn > div,
+#container .btns .btn > img {
   display: table-cell;
   vertical-align: middle;
   width: 100%;

@@ -15,5 +15,8 @@ block content
     h2.titulo-questao #{question.question}
     div.btns
       each alternative, index in question.alternatives
-        a(href=nextLevel+'?answer='+index class='btn')
-          div= alternative
+        a(href=nextLevel+'?answer='+index+'&p='+p class='btn')
+          if (isImage)
+            img(src= alternative)
+          else
+            div= alternative
