@@ -87,7 +87,7 @@ a {
 
 #container .btns .btn {
   display: table;
-  margin-bottom: 3px;
+  margin: 10px 0px;
   padding: 5px;
   width: 100%;
   min-height: 65px;
@@ -95,10 +95,12 @@ a {
   background: #fff;
   text-decoration: none;
   color: #666;
+  border-radius: 3px;
 }
 
 #container .btns .btn:hover {
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  background: #65B4E8;
+  color: #fff;
 }
 
 #container .btns .btn > div {
