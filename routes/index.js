@@ -56,7 +56,7 @@ router.get('/2', function(req, res, next) {
 router.get('/3', function(req, res, next) {
   db.Questions.findOne({
     level: '3',
-    ref: '0'
+    ref: req.query.answer
   }, function(err, question) {
     if (err) return console.log(err);
     if (question == null) return res.json({
@@ -79,12 +79,13 @@ router.get('/3', function(req, res, next) {
 router.get('/4', function(req, res, next) {
   db.Questions.findOne({
     level: '4',
-    ref: '0'
+    ref: req.query.answer
   }, function(err, question) {
     if (err) return console.log(err);
     if (question == null) return res.json({
       question: question
     });
+
     res.render('index', {
       question: question,
       nextLevel: '/result',

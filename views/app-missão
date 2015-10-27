@@ -1,0 +1,65 @@
+<!doctype html>
+
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="pt-br"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="pt-br"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="pt-br"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="pt-br"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>APP Descubra sua missão</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta property="og:site_name" content="Qual a sua missão?">
+  <meta property="og:description" content="##">
+  <meta property="og:image" content="#">
+
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!--Google Fonts-->
+  <link href='http://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+
+     <!--Scripts-->
+
+     <!-- end scripts -->
+
+</head>
+
+<body>
+<!--Chrome Frame para IE7-->
+<!--[if lt IE 7]><p class=chromeframe>Seu browser é <em>muito antigo!</em> <a href="http://browsehappy.com/">Atualize para uma versão recente</a> ou <a href="http://www.google.com/chromeframe/?redirect=true">instale o Google Chrome Frame</a> para aproveitar todos os recursos deste site.</p><![endif]-->
+
+  <div id="container">
+  <div id="top">
+    <div class="eventos-do-bem.ico.ico-left">
+
+       <img src="images/logo-eventos-do-bem.png">
+
+        <div class="titulo-top">
+          <h3> Qual é a sua missão?</h3>
+          <h2> Questão 1 de 4 </h2>
+                <div class="atados.ico.ico-right">
+                      <img src="images/logo-atados.png">
+                      <div id="progress-bar"></div>
+
+                </div>
+        <div>
+
+        <p>Lorem</p>
+
+
+        </div>
+
+
+    </div>
+
+
+
+  </div>
+
+  </div>
+
+</body>
+</html>

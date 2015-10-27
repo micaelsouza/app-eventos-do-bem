@@ -1,8 +1,14 @@
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://app:123456@ds035553.mongolab.com:35553/app-eventos-do-bem');
+mongoose.connect('mongodb://localhost/app-eventos-do-bem');
+
+var categorySchema = new mongoose.Schema({
+  firstAnsw: String,
+  cc: String
+});
 
 var questionsSchema = new mongoose.Schema({
   level: String,
+  cc: String,
   ref: String,
   question: String,
   alternatives: Array
@@ -21,4 +27,5 @@ var resultSchema = new mongoose.Schema({
 module.exports = {
   Results: mongoose.model('results', resultSchema),
   Questions: mongoose.model('questions', questionsSchema)
+  Category: mongoose.model('category', categorySchema)
 };
